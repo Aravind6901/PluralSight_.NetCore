@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CityInfo.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -19,13 +20,43 @@ namespace WebApplication1.Models
                 {
                     id = 1,
                     Name = "Chennai City",
-                    Description = "With Beach"
+                    Description = "With Beach",
+                    PointsOfInterest = new List<PointsOfInterestDto>()
+                    {
+                        new PointsOfInterestDto ()
+                        {
+                            Id = 1,
+                            Name = "Park",
+                            Description = "Good park with Gym"
+                        },
+                        new PointsOfInterestDto ()
+                        {
+                            Id = 2,
+                            Name = "Besant Road",
+                            Description = "More Shops"
+                        }
+                    }
                 },
                 new CityDto()
                 {
                     id = 2,
                     Name = "Vijayawada",
-                    Description = "With Threaters"
+                    Description = "With Threaters",
+                    PointsOfInterest = new List<PointsOfInterestDto>()
+                    {
+                        new PointsOfInterestDto ()
+                        {
+                            Id = 1,
+                            Name = "Park",
+                            Description = "Good park with Gym"
+                        },
+                        new PointsOfInterestDto ()
+                        {
+                            Id = 2,
+                            Name = "Besant Road",
+                            Description = "More Shops"
+                        }
+                    }
                 }
             };
         }
